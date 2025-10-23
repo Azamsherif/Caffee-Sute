@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Roasted & Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="./index.html">Coffee ☕</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Questions, catering, or feedback — we’d love to hear from you.</p>
+        </div>
+
+        <div class="contact-wrap">
+          <form class="form" action="#" method="post" onsubmit="event.preventDefault(); alert('Message sent!');">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            </div>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+
+          <div class="stack-4">
+            <iframe class="map" title="Cafe Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.176924294311!2d-122.419415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sYour%20Cafe!5e0!3m2!1sen!2sus!4v1610000000000"></iframe>
+            <div class="hours">
+              <strong>Opening Hours</strong>
+              <div class="card-meta">Mon–Fri: 7:00am – 7:00pm</div>
+              <div class="card-meta">Sat–Sun: 8:00am – 6:00pm</div>
+              <div class="card-meta">Phone: (555) 123‑4567</div>
+              <div class="card-meta">123 Roast St, Coffee City</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Coffee ☕</div>
+  </footer>
+
+  <script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+  (function() {
+    const current = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && (href === current || (current === '' && href.endsWith('index.html')))) {
+        a.classList.add('active');
+      }
+      a.addEventListener('click', () => {
+        if (links && links.classList.contains('open')) {
+          links.classList.remove('open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  })();
+  const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

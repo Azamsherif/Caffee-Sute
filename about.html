@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Coffee ☕.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="./index.html">Coffee ☕</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Story</h2>
+          <p>From small-batch roasting to a neighborhood favorite.</p>
+        </div>
+
+        <div class="about-wrap">
+          <div class="about-pane stack-3">
+            <p>Roasted & Co. began with a simple idea: coffee should be warm, honest, and shared. We started roasting in a tiny garage with a hand-me-down roaster and big dreams. Today, we still roast in small batches, and our bakers craft pastries every morning before sunrise.</p>
+            <p>Our space is designed to slow things down — natural wood, soft light, and the aroma of fresh grounds. Whether you stay a while or grab a cup to go, we hope you feel at home.</p>
+          </div>
+
+          <div class="stack-3">
+            <div class="about-pane">
+              <img class="responsive-img img-cover" alt="Friendly coffee shop team" src="assets/images/gallery-1.jpg" />
+            </div>
+            <div class="about-pane values">
+              <div class="value">
+                <div class="dot"></div>
+                <div>
+                  <strong>Quality First</strong>
+                  <div class="card-meta">Sourcing ethically and roasting thoughtfully.</div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="dot"></div>
+                <div>
+                  <strong>Community</strong>
+                  <div class="card-meta">A place for conversations and creativity.</div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="dot"></div>
+                <div>
+                  <strong>Sustainability</strong>
+                  <div class="card-meta">Compostable cups and local partners.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Coffee ☕</div>
+  </footer>
+
+  <script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+  (function() {
+    const current = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && (href === current || (current === '' && href.endsWith('index.html')))) {
+        a.classList.add('active');
+      }
+      a.addEventListener('click', () => {
+        if (links && links.classList.contains('open')) {
+          links.classList.remove('open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  })();
+  const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

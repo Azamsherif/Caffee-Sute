@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roasted & Co. — Modern Coffee Shop</title>
+  <meta name="description" content="Warm, modern coffee shop. Specialty coffee, pastries, and friendly vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="./index.html">Coffee ☕</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="pill">Warm & Cozy</span>
+          <h1>Handcrafted coffee, made with heart</h1>
+          <p>Slow down and savor. From espresso to pour-over, we roast in-house and bake fresh daily.</p>
+          <div class="stack-3">
+            <a class="btn" href="./menu.html">Order Now</a>
+            <div class="stack-2">
+              <span class="card-meta">Open daily · 7am – 7pm</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img class="hero-media" alt="Beautiful latte art on wooden table" src="assets/images/coffee-hero-section.png">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Favorites this season</h2>
+          <p>Rich flavors, soft textures, and just the right sweetness.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <img alt="Perfect cappuccino with foam art" src="assets/images/hot-beverages.png" />
+            <div class="card-body">
+              <div class="card-title">Cappuccino</div>
+              <div class="card-meta"><span>Velvety microfoam</span><strong>$4.50</strong></div>
+            </div>
+          </article>
+          <article class="card">
+            <img alt="Fresh golden croissant on plate" src="assets/images/Almond Croissant.jpeg" />
+            <div class="card-body">
+              <div class="card-title">Butter Croissant</div>
+              <div class="card-meta"><span>Flaky & warm</span><strong>$3.20</strong></div>
+            </div>
+          </article>
+          <article class="card">
+            <img alt="Refreshing iced latte with ice cubes" src="assets/images/cold-beverages.png" />
+            <div class="card-body">
+              <div class="card-title">Iced Latte</div>
+              <div class="card-meta"><span>Chilled & smooth</span><strong>$5.00</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Coffee ☕ · Crafted with care</div>
+  </footer>
+
+  <script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+  // Active link highlight
+  (function() {
+    const current = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href && (href === current || (current === '' && href.endsWith('index.html')))) {
+        a.classList.add('active');
+      }
+      a.addEventListener('click', () => {
+        if (links && links.classList.contains('open')) {
+          links.classList.remove('open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  })();
+  const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
