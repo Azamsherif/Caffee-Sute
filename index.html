@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roasted & Co. — Artisanal Specialty Coffee & Bakery</title>
+  <meta name="description" content="Experience handcrafted specialty coffee, in-house roasted beans, and freshly baked artisanal pastries at Roasted & Co." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">
+        <div class="brand-icon">☕</div>
+        <div class="brand-text">
+          <span class="brand-name">Roasted & Co.</span>
+          <span class="brand-tag">Artisan Roastery</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./about.html">Our Story</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="./menu.html" class="btn btn-primary btn-nav">Order Online</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero Section (Entrance Fade-Up & Scale In) -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content" data-anim="hero-fade-up">
+          <div class="pill-badge light">
+            <span>✨</span> Handcrafted Daily with Heart
+          </div>
+          <h1 class="hero-title">
+            Artisanal Coffee, <span>Brewed to Pure Perfection</span>
+          </h1>
+          <p class="hero-desc">
+            Slow down and savor every sip. From single-origin espresso roasts to buttery French croissants, we create a warm sanctuary for true coffee lovers.
+          </p>
+          <div class="hero-actions">
+            <a href="./menu.html" class="btn btn-primary">
+              <span>View Full Menu</span> ➔
+            </a>
+            <a href="./about.html" class="btn btn-outline-light">
+              <span>Discover Our Story</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="100" data-suffix="%">100%</span>
+              <span class="stat-label">Arabica Specialty</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="15" data-suffix="+">15+</span>
+              <span class="stat-label">Bean Origins</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="4.9" data-suffix=" ★">4.9 ★</span>
+              <span class="stat-label">Customer Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrap" data-anim="hero-scale">
+          <div class="hero-image-card">
+            <img src="./assets/images/coffee-hero-section.png" alt="Signature roasted coffee and latte art" />
+          </div>
+          <div class="hero-floating-badge">
+            <div class="floating-icon">☕</div>
+            <div class="floating-text">
+              <strong>Fresh Micro-Roasts</strong>
+              <span>Roasted in-house every sunrise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Why Us / Features (3D Tilt-Rise Animation) -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-head" data-anim="hero-fade-up">
+          <span class="section-subtitle">The Roasted & Co. Promise</span>
+          <h2 class="section-title">What Sets Our Cup Apart</h2>
+          <p class="section-desc">We obsess over every single detail — from direct-trade sustainable farms to precise water temperature and velvety micro-foam.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box" data-anim="tilt-rise" data-delay="100">
+            <div class="feature-icon-wrap">🌱</div>
+            <h3 class="feature-title">Ethically Sourced</h3>
+            <p class="feature-desc">100% single-origin beans purchased directly from fair-trade family farms across Colombia, Ethiopia, and Kenya.</p>
+          </div>
+
+          <div class="feature-box" data-anim="tilt-rise" data-delay="250">
+            <div class="feature-icon-wrap">🔥</div>
+            <h3 class="feature-title">Micro-Batch Roasting</h3>
+            <p class="feature-desc">Roasted in small 5kg batches to lock in delicate flavor notes, floral aromas, and rich body.</p>
+          </div>
+
+          <div class="feature-box" data-anim="tilt-rise" data-delay="400">
+            <div class="feature-icon-wrap">🥐</div>
+            <h3 class="feature-title">Artisan Bakery</h3>
+            <p class="feature-desc">Flaky croissants, sourdough toasts, and delicate desserts prepared from scratch every morning.</p>
+          </div>
+
+          <div class="feature-box" data-anim="tilt-rise" data-delay="550">
+            <div class="feature-icon-wrap">🌿</div>
+            <h3 class="feature-title">Warm & Cozy Space</h3>
+            <p class="feature-desc">A comfortable haven with natural wood accents, warm lighting, ambient music, and high-speed Wi-Fi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Seasonal Favorites (Blur-to-Focus Cascade Animation) -->
+    <section>
+      <div class="container">
+        <div class="section-head" data-anim="hero-fade-up">
+          <span class="section-subtitle">Curated Selection</span>
+          <h2 class="section-title">Seasonal House Favorites</h2>
+          <p class="section-desc">Handpicked by our head baristas — our most beloved drinks and sweet pairings.</p>
+        </div>
+
+        <div class="grid-cards">
+          <!-- Card 1 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="100">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Best Seller</span>
+              <img src="./assets/images/hot-beverages.png" alt="Velvety Cappuccino with artistic microfoam" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Hot Coffee</span>
+              <h3 class="card-title">Velvet Cappuccino</h3>
+              <p class="card-desc">Double espresso topped with silky, textured micro-foam and subtle dusting of Madagascar cocoa.</p>
+              <div class="card-footer">
+                <span class="card-price">$4.75</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="200">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Chef's Pick</span>
+              <img src="./assets/images/Almond Croissant.jpeg" alt="Golden Almond Croissant" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Artisan Bakery</span>
+              <h3 class="card-title">Almond Frangipane</h3>
+              <p class="card-desc">Twice-baked butter croissant loaded with rich almond crème and topped with toasted sliced almonds.</p>
+              <div class="card-footer">
+                <span class="card-price">$4.25</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="300">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Signature</span>
+              <img src="./assets/images/cold-beverages.png" alt="Cold Caramel Macchiato" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Iced Specials</span>
+              <h3 class="card-title">Salted Caramel Cold Brew</h3>
+              <p class="card-desc">24-hour slow steeped cold brew layered with velvety oat milk and house-made salted butter caramel.</p>
+              <div class="card-footer">
+                <span class="card-price">$5.50</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="400">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Indulgent</span>
+              <img src="./assets/images/Mocha.jpg" alt="Rich Dark Chocolate Mocha" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Hot Coffee</span>
+              <h3 class="card-title">Belgian Mocha</h3>
+              <p class="card-desc">Artisanal single-origin espresso melted with 70% dark Belgian chocolate and steamed milk.</p>
+              <div class="card-footer">
+                <span class="card-price">$5.25</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="150">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Sweet Pairing</span>
+              <img src="./assets/images/Tiramisu.jpg" alt="Classic Italian Tiramisu" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Dessert</span>
+              <h3 class="card-title">Espresso Tiramisu</h3>
+              <p class="card-desc">Traditional mascarpone cream layered with espresso-soaked ladyfingers and premium Dutch cacao.</p>
+              <div class="card-footer">
+                <span class="card-price">$6.00</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="250">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Breakfast Combo</span>
+              <img src="./assets/images/special-combo.png" alt="Breakfast Sandwich Combo" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Kitchen Specials</span>
+              <h3 class="card-title">Morning Gourmet Combo</h3>
+              <p class="card-desc">Warm brioche egg & avocado breakfast sandwich paired with any signature brewed coffee of your choice.</p>
+              <div class="card-footer">
+                <span class="card-price">$9.50</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="350">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">House Favorite</span>
+              <img src="./assets/images/Baked Cheesecake.jpeg" alt="San Sebastián Burnt Cheesecake" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Artisan Bakery</span>
+              <h3 class="card-title">San Sebastián Cheesecake</h3>
+              <p class="card-desc">Caramelized crust with a molten, creamy center and subtle hints of Bourbon vanilla.</p>
+              <div class="card-footer">
+                <span class="card-price">$6.80</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="product-card" data-anim="cascade-card" data-delay="450">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Fresh Daily</span>
+              <img src="./assets/images/Blueberry Muffin.jpeg" alt="Wild Blueberry Streusel" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Pastry</span>
+              <h3 class="card-title">Wild Blueberry Streusel</h3>
+              <p class="card-desc">Plump wild organic blueberries in a moist vanilla buttermilk sponge with crunchy cinnamon sugar.</p>
+              <div class="card-footer">
+                <span class="card-price">$3.80</span>
+                <a href="./menu.html" class="btn-order-sm">Order Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;" data-anim="hero-fade-up">
+          <a href="./menu.html" class="btn btn-secondary">
+            <span>Explore All 24+ Menu Offerings</span> ➔
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Heritage Split (Bi-Directional Cinematic Slide) -->
+    <section style="background: var(--color-surface-soft);">
+      <div class="container">
+        <div class="about-split">
+          <div class="about-img-box" data-anim="slide-right">
+            <img class="about-img-main" src="./assets/images/about-image.jpg" alt="Barista pouring artisanal coffee" />
+            <div class="about-stat-card">
+              <strong data-count="10" data-suffix="+">10+</strong>
+              <span>Years of Passionate Crafting & Roasting</span>
+            </div>
+          </div>
+
+          <div data-anim="slide-left">
+            <span class="section-subtitle">Our Heritage</span>
+            <h2 class="section-title">Rooted in Tradition, Brewed for Modern Tastes</h2>
+            <p class="section-desc">
+              Roasted & Co. was founded with one simple vision: to turn your everyday morning caffeine ritual into a moment of pure bliss and pause.
+            </p>
+
+            <ul class="checklist">
+              <li>
+                <span class="checklist-icon">✓</span>
+                <span>Direct relationships with certified sustainable coffee growers.</span>
+              </li>
+              <li>
+                <span class="checklist-icon">✓</span>
+                <span>Small batch roasting on vintage cast-iron drum roasters.</span>
+              </li>
+              <li>
+                <span class="checklist-icon">✓</span>
+                <span>Plant-based dairy alternatives with zero extra upcharge.</span>
+              </li>
+              <li>
+                <span class="checklist-icon">✓</span>
+                <span>Warm, welcoming community atmosphere where everyone belongs.</span>
+              </li>
+            </ul>
+
+            <div style="margin-top: 32px;">
+              <a href="./about.html" class="btn btn-primary">Read Our Full Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Testimonials (Elastic Spring Pop & Sparkle) -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-head" data-anim="hero-fade-up">
+          <span class="section-subtitle">Customer Love</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <p class="section-desc">Over 1,500 glowing reviews from passionate coffee enthusiasts and local neighborhood regulars.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-anim="elastic-pop" data-delay="100">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The best flat white in the entire city hands down. You can genuinely taste the precision of their roast profile. The almond croissant was heavenly warm!"
+            </p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="./assets/images/user-1.jpg" alt="Sarah Jenkins" />
+              <div class="author-info">
+                <strong>Sarah Jenkins</strong>
+                <span>Architect & Daily Regular</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-anim="elastic-pop" data-delay="250">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Roasted & Co. is my go-to remote work spot. Great natural lighting, warm aesthetic, friendly staff, and the cold brew gives me superpowers every single day."
+            </p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="./assets/images/user-2.jpg" alt="David Chen" />
+              <div class="author-info">
+                <strong>David Chen</strong>
+                <span>Product Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-anim="elastic-pop" data-delay="400">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">
+              "The attention to detail here is on another level. From the aroma walking in to the presentation of their desserts, it feels like a luxury European cafe."
+            </p>
+            <div class="testimonial-author">
+              <img class="author-avatar" src="./assets/images/user-3.jpg" alt="Elena Rodriguez" />
+              <div class="author-info">
+                <strong>Elena Rodriguez</strong>
+                <span>Food & Travel Writer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Instagram / Gallery (Shutter Curtain Zoom Animation) -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-head" style="color: #fff;" data-anim="hero-fade-up">
+          <span class="section-subtitle">Atmosphere & Vibes</span>
+          <h2 class="section-title" style="color: #fff;">Moments at Roasted & Co.</h2>
+          <p class="section-desc" style="color: rgba(255,255,255,0.7);">Tag us on Instagram <strong style="color:var(--color-accent)">@roastedandco</strong> to be featured.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="100">
+            <img src="./assets/images/gallery-1.jpg" alt="Cafe community seating" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="200">
+            <img src="./assets/images/gallery-2.jpg" alt="Pour over brewing process" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="300">
+            <img src="./assets/images/gallery-3.jpg" alt="Freshly baked artisan croissants" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="400">
+            <img src="./assets/images/gallery-4.jpg" alt="Espresso extraction" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="500">
+            <img src="./assets/images/gallery-5.jpg" alt="Cozy reading corner" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+          <div class="gallery-item" data-anim="shutter-zoom" data-delay="600">
+            <img src="./assets/images/gallery-6.jpg" alt="Latte art preparation" />
+            <div class="gallery-overlay">📷</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Envelope Unfold Animation) -->
+  <footer class="footer" data-anim="envelope-up">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="./index.html">
+            <div class="brand-icon">☕</div>
+            <div class="brand-text">
+              <span class="brand-name">Roasted & Co.</span>
+              <span class="brand-tag">Artisan Roastery</span>
+            </div>
+          </a>
+          <p>
+            Dedicated to handcrafted specialty coffee, sustainable ethics, and creating a space that feels like home.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Full Menu</a></li>
+            <li><a href="./about.html">Our Heritage</a></li>
+            <li><a href="./contact.html">Locations & Hours</a></li>
+            <li><a href="./contact.html">Table Reservations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Opening Hours</h4>
+          <ul class="footer-hours-list">
+            <li><span>Mon – Fri</span> <strong>7:00 AM – 8:00 PM</strong></li>
+            <li><span>Saturday</span> <strong>7:30 AM – 9:00 PM</strong></li>
+            <li><span>Sunday</span> <strong>8:00 AM – 7:00 PM</strong></li>
+          </ul>
+        </div>
+
+        <div class="newsletter-box">
+          <h4 class="footer-title">Join The Club</h4>
+          <p>Receive exclusive invitations to tasting events and monthly free brew vouchers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to Roasted & Co. Club!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Roasted & Co. Coffee Roasters. All rights reserved.</div>
+        <div>Crafted with precision & passion ☕</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/animations.js"></script>
+  <script>
+    // Responsive Navbar Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    // Dynamic Year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

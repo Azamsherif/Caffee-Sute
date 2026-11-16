@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu — Roasted & Co. Artisanal Roastery</title>
+  <meta name="description" content="Explore our artisanal coffee drinks, single-origin pour-overs, baked pastries, and fine desserts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./index.html">
+        <div class="brand-icon">☕</div>
+        <div class="brand-text">
+          <span class="brand-name">Roasted & Co.</span>
+          <span class="brand-tag">Artisan Roastery</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./menu.html" class="active">Menu</a></li>
+        <li><a href="./about.html">Our Story</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="./contact.html" class="btn btn-primary btn-nav">Reserve Table</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner (Hero Fade-Up Animation) -->
+    <section class="page-banner">
+      <div class="container" data-anim="hero-fade-up">
+        <div class="pill-badge light" style="margin-bottom: 16px;">
+          <span>☕</span> Handcrafted With Passion
+        </div>
+        <h1 class="hero-title" style="font-size: clamp(34px, 4.5vw, 54px);">
+          Our Artisanal <span>Menu</span>
+        </h1>
+        <p class="hero-desc" style="margin: 0 auto; max-width: 680px;">
+          From specialty micro-roasted espresso to slow-steeped cold brews and French morning pastries, each item is prepared with artisanal precision.
+        </p>
+
+        <div class="banner-pills-row">
+          <div class="banner-pill-feature">
+            <span>✓</span> 100% Single-Origin Arabica
+          </div>
+          <div class="banner-pill-feature">
+            <span>✓</span> Fresh Micro-Roasted Daily
+          </div>
+          <div class="banner-pill-feature">
+            <span>✓</span> Pure Normandy Butter Bakery
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section with Filters -->
+    <section>
+      <div class="container">
+        <!-- Modern Menu Toolbar (Envelope Unfold Animation) -->
+        <div class="menu-toolbar" data-anim="envelope-up">
+          <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="hot">Hot Coffee</button>
+            <button class="filter-btn" data-filter="cold">Cold & Iced</button>
+            <button class="filter-btn" data-filter="pastries">Artisan Pastries</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn" data-filter="combos">Gourmet Combos</button>
+          </div>
+
+          <div class="menu-search-wrap">
+            <span class="menu-search-icon">🔍</span>
+            <input type="text" id="menuSearch" class="menu-search-input" placeholder="Search coffee, pastries..." />
+          </div>
+
+          <div class="menu-count-badge" id="menuCount">
+            Showing all 13 artisanal items
+          </div>
+        </div>
+
+        <!-- Menu Grid (Staggered Cascade Blur-to-Focus Animation) -->
+        <div class="grid-cards" id="menuGrid">
+          
+          <!-- Item 1: Espresso -->
+          <article class="product-card" data-category="hot" data-anim="cascade-card" data-delay="50">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Single Origin</span>
+              <img src="./assets/images/gallery-6.jpg" alt="Double shot espresso" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Hot Coffee</span>
+              <h3 class="card-title">Classic Double Espresso</h3>
+              <p class="card-desc">Extracted under 9 bars of pressure. Notes of dark cacao, honeyed citrus, and roasted walnut.</p>
+              <div class="card-footer">
+                <span class="card-price">$3.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Classic Double Espresso to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Flat White -->
+          <article class="product-card" data-category="hot" data-anim="cascade-card" data-delay="100">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Barista Pick</span>
+              <img src="./assets/images/hot-beverages.png" alt="Silky Flat White" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Hot Coffee</span>
+              <h3 class="card-title">Silky Flat White</h3>
+              <p class="card-desc">Ristretto shots paired with velvety, free-poured whole milk creating an impeccably smooth finish.</p>
+              <div class="card-footer">
+                <span class="card-price">$4.80</span>
+                <button class="btn-order-sm" onclick="alert('Added Silky Flat White to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Mocha -->
+          <article class="product-card" data-category="hot" data-anim="cascade-card" data-delay="150">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Popular</span>
+              <img src="./assets/images/Mocha.jpg" alt="Rich Mocha" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Hot Coffee</span>
+              <h3 class="card-title">Belgian Dark Mocha</h3>
+              <p class="card-desc">Double espresso melted into artisanal single-origin 70% dark Belgian chocolate ganache.</p>
+              <div class="card-footer">
+                <span class="card-price">$5.25</span>
+                <button class="btn-order-sm" onclick="alert('Added Belgian Dark Mocha to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Cold Brew -->
+          <article class="product-card" data-category="cold" data-anim="cascade-card" data-delay="200">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Slow Brewed</span>
+              <img src="./assets/images/cold-beverages.png" alt="Cold Brew Coffee" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Cold & Iced</span>
+              <h3 class="card-title">24-Hr Nitro Cold Brew</h3>
+              <p class="card-desc">Slowly steeped over 24 hours with cold filtered water, infused with nitrogen for a Guinness-like creamy head.</p>
+              <div class="card-footer">
+                <span class="card-price">$5.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Nitro Cold Brew to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Iced Refreshment -->
+          <article class="product-card" data-category="cold" data-anim="cascade-card" data-delay="250">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Refreshing</span>
+              <img src="./assets/images/refreshment.png" alt="Sparkling Fruit Refreshment" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Cold & Iced</span>
+              <h3 class="card-title">Botanical Citrus Tonic</h3>
+              <p class="card-desc">Cold extracted espresso floated over artisanal botanical tonic water and organic blood orange slice.</p>
+              <div class="card-footer">
+                <span class="card-price">$5.00</span>
+                <button class="btn-order-sm" onclick="alert('Added Botanical Citrus Tonic to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Almond Croissant -->
+          <article class="product-card" data-category="pastries" data-anim="cascade-card" data-delay="300">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Baked Daily</span>
+              <img src="./assets/images/Almond Croissant.jpeg" alt="Almond Croissant" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Artisan Pastries</span>
+              <h3 class="card-title">French Almond Croissant</h3>
+              <p class="card-desc">Pure Normandy butter lamination, stuffed with homemade rich almond paste and toasted flakes.</p>
+              <div class="card-footer">
+                <span class="card-price">$4.20</span>
+                <button class="btn-order-sm" onclick="alert('Added French Almond Croissant to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Blueberry Muffin -->
+          <article class="product-card" data-category="pastries" data-anim="cascade-card" data-delay="350">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Fresh</span>
+              <img src="./assets/images/Blueberry Muffin.jpeg" alt="Blueberry Muffin" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Artisan Pastries</span>
+              <h3 class="card-title">Wild Blueberry Streusel</h3>
+              <p class="card-desc">Plump wild organic blueberries in a moist vanilla buttermilk sponge topped with cinnamon sugar crumble.</p>
+              <div class="card-footer">
+                <span class="card-price">$3.80</span>
+                <button class="btn-order-sm" onclick="alert('Added Wild Blueberry Streusel to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Banana Bread -->
+          <article class="product-card" data-category="pastries" data-anim="cascade-card" data-delay="400">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Warm Slice</span>
+              <img src="./assets/images/Banana Bread.jpg" alt="Toasted Banana Bread" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Artisan Pastries</span>
+              <h3 class="card-title">Walnut Banana Bread</h3>
+              <p class="card-desc">Caramelized ripe bananas baked with roasted walnuts, served toasted with creamy salted whipped butter.</p>
+              <div class="card-footer">
+                <span class="card-price">$4.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Walnut Banana Bread to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 9: Tiramisu -->
+          <article class="product-card" data-category="desserts" data-anim="cascade-card" data-delay="450">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Signature</span>
+              <img src="./assets/images/Tiramisu.jpg" alt="Classic Tiramisu" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Desserts</span>
+              <h3 class="card-title">Artisan Espresso Tiramisu</h3>
+              <p class="card-desc">Authentic Italian mascarpone whip layered over Savoiardi biscuits soaked in our single-origin house espresso.</p>
+              <div class="card-footer">
+                <span class="card-price">$6.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Espresso Tiramisu to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 10: Baked Cheesecake -->
+          <article class="product-card" data-category="desserts" data-anim="cascade-card" data-delay="500">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">House Favorite</span>
+              <img src="./assets/images/Baked Cheesecake.jpeg" alt="Baked Cheesecake" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Desserts</span>
+              <h3 class="card-title">San Sebastián Burnt Cheesecake</h3>
+              <p class="card-desc">Basque-style caramelized crust with a molten, creamy center and subtle hints of Bourbon vanilla.</p>
+              <div class="card-footer">
+                <span class="card-price">$6.80</span>
+                <button class="btn-order-sm" onclick="alert('Added Burnt Cheesecake to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 11: Chocolate Cake -->
+          <article class="product-card" data-category="desserts" data-anim="cascade-card" data-delay="550">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Decadent</span>
+              <img src="./assets/images/Chocolate Cake.jpg" alt="Rich Chocolate Cake" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Desserts</span>
+              <h3 class="card-title">Dark Fudge Truffle Cake</h3>
+              <p class="card-desc">Triple-layer Valrhona dark chocolate sponge filled with silky chocolate ganache and chocolate curls.</p>
+              <div class="card-footer">
+                <span class="card-price">$6.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Truffle Cake to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 12: Breakfast Combo -->
+          <article class="product-card" data-category="combos" data-anim="cascade-card" data-delay="600">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Special Value</span>
+              <img src="./assets/images/special-combo.png" alt="Morning Breakfast Combo" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Gourmet Combos</span>
+              <h3 class="card-title">Artisan Breakfast Trio</h3>
+              <p class="card-desc">Freshly baked croissant, soft scramble with avocado on sourdough, and your choice of large hot brew.</p>
+              <div class="card-footer">
+                <span class="card-price">$11.50</span>
+                <button class="btn-order-sm" onclick="alert('Added Breakfast Trio to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 13: Burger Combo -->
+          <article class="product-card" data-category="combos" data-anim="cascade-card" data-delay="650">
+            <div class="card-thumb-wrap">
+              <span class="card-tag">Chef's Lunch</span>
+              <img src="./assets/images/burger-frenchfries.png" alt="Artisan Burger and Fries" />
+            </div>
+            <div class="product-card-body">
+              <span class="card-category">Gourmet Combos</span>
+              <h3 class="card-title">Truffle Brioche Burger & Fries</h3>
+              <p class="card-desc">Handcrafted beef patty, aged cheddar, truffle aioli on toasted brioche bun with crispy herb french fries.</p>
+              <div class="card-footer">
+                <span class="card-price">$13.90</span>
+                <button class="btn-order-sm" onclick="alert('Added Brioche Burger to order!')">Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Envelope Unfold Animation) -->
+  <footer class="footer" data-anim="envelope-up">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="./index.html">
+            <div class="brand-icon">☕</div>
+            <div class="brand-text">
+              <span class="brand-name">Roasted & Co.</span>
+              <span class="brand-tag">Artisan Roastery</span>
+            </div>
+          </a>
+          <p>
+            Dedicated to handcrafted specialty coffee, sustainable ethics, and creating a space that feels like home.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="#" class="social-btn" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Full Menu</a></li>
+            <li><a href="./about.html">Our Heritage</a></li>
+            <li><a href="./contact.html">Locations & Hours</a></li>
+            <li><a href="./contact.html">Table Reservations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Opening Hours</h4>
+          <ul class="footer-hours-list">
+            <li><span>Mon – Fri</span> <strong>7:00 AM – 8:00 PM</strong></li>
+            <li><span>Saturday</span> <strong>7:30 AM – 9:00 PM</strong></li>
+            <li><span>Sunday</span> <strong>8:00 AM – 7:00 PM</strong></li>
+          </ul>
+        </div>
+
+        <div class="newsletter-box">
+          <h4 class="footer-title">Join The Club</h4>
+          <p>Receive exclusive invitations to tasting events and monthly free brew vouchers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to Roasted & Co. Club!');">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required />
+            <button type="submit" class="newsletter-btn">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Roasted & Co. Coffee Roasters. All rights reserved.</div>
+        <div>Crafted with precision & passion ☕</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/animations.js"></script>
+  <script>
+    // Responsive Navbar Toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+
+    // Dynamic Year
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Enhanced Menu Filter & Live Search Script
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const menuItems = document.querySelectorAll('#menuGrid .product-card');
+    const menuSearch = document.getElementById('menuSearch');
+    const menuCount = document.getElementById('menuCount');
+
+    let currentFilter = 'all';
+    let currentQuery = '';
+
+    function updateMenuDisplay() {
+      let visibleCount = 0;
+
+      menuItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        const title = item.querySelector('.card-title').textContent.toLowerCase();
+        const desc = item.querySelector('.card-desc').textContent.toLowerCase();
+
+        const matchesFilter = (currentFilter === 'all' || category === currentFilter);
+        const matchesQuery = (!currentQuery || title.includes(currentQuery) || desc.includes(currentQuery));
+
+        if (matchesFilter && matchesQuery) {
+          item.style.display = 'flex';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      if (menuCount) {
+        menuCount.textContent = `Showing ${visibleCount} artisanal item${visibleCount === 1 ? '' : 's'}`;
+      }
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        updateMenuDisplay();
+      });
+    });
+
+    if (menuSearch) {
+      menuSearch.addEventListener('input', (e) => {
+        currentQuery = e.target.value.trim().toLowerCase();
+        updateMenuDisplay();
+      });
+    }
+  </script>
+</body>
+</html>
