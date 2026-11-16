@@ -108,9 +108,9 @@ function initCountUp() {
  * 4. INTERACTIVE 3D SUBTLE CARD TILT (Awwwards/Apple Style)
  */
 function initTiltCards() {
-  // Only enable on desktop with hover capability
+  // Only enable on desktop with hover capability for feature and stat cards
   if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    const tiltCards = document.querySelectorAll('.feature-box, .product-card, .about-stat-card');
+    const tiltCards = document.querySelectorAll('.feature-box, .about-stat-card');
 
     tiltCards.forEach(card => {
       card.addEventListener('mousemove', (e) => {
